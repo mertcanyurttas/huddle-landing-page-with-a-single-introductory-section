@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+/* font-family: 'Open Sans', sans-serif; */
+
+:root {
+    --purple: hsl(257, 40%, 49%);
+    --pink: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background-color: var(--purple);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-position: center;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Desktop Design Start */
+
+.header .banner-box {
+    width: 200px;
+    height: 32px;
+    margin-top: 64px;
+    margin-left: 80px;
+}
+
+.header .banner-box img {
+    max-width: 100%;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    margin: 104px 85px 0px 80px;
+}
+
+.main .container .left-box {
+    width: 696px;
+    height: 493px;
+}
+
+.main .container .left-box img {
+    width: 100%;
+    min-width: 510px;
+}
+
+.main .container .right-box {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: flex-start;
+    width: 520px;
+    margin: 32px 0px 0px 59px;
+}
+
+.main .container .right-box h1 {
+    width: 487px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #fff;
+}
+
+.main .container .right-box h2 {
+    width: 520px;
+    margin-top: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+}
+
+.main .container .right-box button {
+    width: 200px;
+    height: 56px;
+    margin: 24px auto auto 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 27px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    color: var(--purple);
+    background-color: #fff;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+}
+
+.main .container .right-box button:hover {
+    color: #fff;
+    background-color: var(--pink);
+}
+
+.footer .media-icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 152px;
+    height: 40px;
+    margin: 27px 80px 40px auto;
+}
+
+.footer .media-icons div {
+    border: 1.176px solid #fff;
+    border-radius: 50%;
+}
+
+.footer .media-icons div:hover {
+    border-color: var(--pink);
+}
+
+.footer .media-icons div:not(:last-child) {
+    margin-right: 16px;
+}
+
+.footer .media-icons div a {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    color: #fff;
+}
+
+.footer .media-icons div a:hover {
+    color: var(--pink);
+}
+
+/* Desktop Design Finish */
+
+/* Media Queries for Tablet Start */
+
+@media only screen and (max-width: 1200px) {
+    .main .container {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        margin: 120px 0px 0px;
+    }
+
+    .main .container .left-box {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0% 15%;
+    }
+
+    .main .container .left-box img {
+        min-width: 100%;
+        margin: 0px;
+    }
+
+    .main .container .right-box {
+        width: 60%;
+        min-width: 440px;
+        margin: 60px auto 0px;
+        align-items: center;
+    }
+
+    .main .container .right-box h1{
+        width: 100%;
+        max-width: 610px;
+        margin: 0px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .main .container .right-box h2 {
+        width: 100%;
+        max-width: 610px;
+        margin: 25px auto 0px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .main .container .right-box button {
+        margin: 25px 0px 0px;
+        font-weight: 400;
+    }
+
+    .footer .media-icons {
+        justify-content: center;
+        width: 100%;
+        margin: 80px 0px 40px;
+    }
+}
+
+/* Media Queries for Tablet Finish */
+
+/* Media Queries for Mobile Start */
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
+
+    .header .banner-box {
+        width: 120px;
+        height: 19px;
+        margin: 38.2px auto auto 40px;
+    }
+
+    .main .container {
+        margin-top: 69.8px;
+    }
+
+    .main .container .right-box {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .main .container .right-box h1 {
+        max-width: 280px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .main .container .right-box h2 {
+        max-width: 304px;
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main .container .right-box button {
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+/* Media Queries for Mobile Finish */
